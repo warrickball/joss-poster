@@ -1,10 +1,10 @@
 \documentclass[25pt, a0paper, portrait]{tikzposter}
 
-\usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{ETbb}
 \usepackage[fontsize=28pt]{fontsize}
+% \usepackage{microtype}  % conflicts with hyperref and tikzposter, see https://tex.stackexchange.com/questions/481636/incompatibility-between-tikzposter-class-microtype-and-hyperref-package
 \usepackage{hyperref}
 
 % \title{The Journal of Open Source Software}
@@ -16,6 +16,8 @@
 % \titlegraphic{logo_large.png}
 \settitle{}
 
+% https://tex.stackexchange.com/questions/254257/tikzposter-and-doi-package-conflict
+\def\HyperFirstAtBeginDocument#1{#1}
 \begin{document}
 
 % Title block with title, author, logo, etc.
