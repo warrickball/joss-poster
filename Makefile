@@ -1,5 +1,5 @@
-poster.pdf: poster.tex JOSS-flowchart-updated.pdf by.png joss-logo-transparent-crop.png joss-papers-per-year.png joss-qr.png
-	pdflatex \\nonstopmode\\input poster.tex
+joss-poster.pdf: joss-poster.tex JOSS-flowchart-updated.pdf by.png joss-logo-transparent-crop.png joss-papers-per-year.png joss-qr.png
+	pdflatex \\nonstopmode\\input joss-poster.tex
 
 JOSS-flowchart-updated.pdf:
 	rm -f $@
@@ -10,4 +10,4 @@ by.png:
 	wget http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png
 
 clean:
-	rm poster.{aux,log,out,pdf} by.png JOSS-flowchart-updated.pdf
+	rm joss-poster.{aux,log,out,pdf} by.png JOSS-flowchart-updated.pdf
