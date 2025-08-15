@@ -3,7 +3,7 @@ joss-poster.pdf: joss-poster.tex JOSS-flowchart-updated.pdf by.png joss-logo-tra
 
 JOSS-flowchart-updated.pdf:
 	rm -f $@
-	wget https://figshare.com/ndownloader/files/26450954 -O $@
+	wget https://ndownloader.figshare.com/files/26450954 -O $@
 
 by.png:
 	rm -f $@
